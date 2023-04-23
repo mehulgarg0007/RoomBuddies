@@ -18,7 +18,7 @@ function Navbar(){
                     <li className='list'><a href="/">Home</a></li>
                     <li className='list'><a href="#">Cities</a></li>
                     <li className='list'><a href="./">About Us</a></li>
-                    <li className='list'><a href="./">For PG Owners</a></li>
+                    <li className='list'><a href="./partner">For PG Owners</a></li>
                     <li className='list'><a href="./ContactUs">Contact Us</a></li>
                 </ul>
             </div>
