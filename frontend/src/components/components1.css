@@ -1,0 +1,262 @@
+*{
+    border : 0px ;
+    margin : 0px ;
+    box-sizing: border-box ;
+    font-family: "Jost",sans-serif;
+}
+.Navbar{
+    width: 100% ;
+    height : 8rem ;
+    display: grid ;
+    grid-template-columns: 8rem 1fr 3fr 8rem ;
+    background-color: rgba(31,72,125,1);
+    box-shadow: rgba(50,50,93,0.25) 0px 50px 100px -20px , rgba(0,0,0,0.3) 0px 30px 60px -30px;
+}
+.Navbar h2 span{
+    font-size: 3.5rem ;
+    color: rgba(31,190,255,0.73);
+}
+li{
+    list-style: none;
+}
+
+.Main{
+    color: white;
+    display: grid ;
+    grid-column : 2/3;
+    align-items: center ;
+}
+
+.ListDiv{
+    display: grid;
+    grid-column : 3/4 ;
+}
+.ListDiv ul{
+    height : 8rem ;
+    display: flex ;
+    justify-content: space-between ; 
+    align-items: center ;
+}
+.ListDiv ul li{
+    font-size: 1.8rem ;
+    transition: 0.5s;
+}
+.ListDiv ul li a{
+    color : white ;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.ListDiv ul li:hover > a{
+    transform-origin: left ;
+    color: rgba(31,190,255,0.73);
+    font-size: 1.5rem ;
+    transition : 0.5s ;
+}
+.header{
+    width: 100%;
+    height :3rem ;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: white ;
+    padding: 10px ;
+    background-color: rgba(31,190,255,0.73);
+}
+.Search-header{
+    padding-top : 50px;
+    text-align: center;
+}
+
+.Search-header h1{
+    font-size: 2.5rem;
+    color : rgba(31,72,125,1);
+}
+.Search-header p{
+    color : rgba(0,0,0,0.8) ;
+}
+.search-local{
+    padding-top : 50px ;
+    display: grid ;
+    grid-template-columns: 1fr 2fr 1fr ;
+}
+.center-card{
+    grid-column: 2/3 ;
+    align-items: flex-start;
+    padding : 20px ;
+    border:0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 97%;
+}
+input{
+    padding : 20px 350px 20px 20px ;
+    border : 2px solid rgba(31,72,125,1);
+    font-size: 1rem;
+}
+button{
+    height : 60px ;
+    width : 120px ;
+    background-color: rgba(31,72,125,1);
+    color : white ;
+    font-size: 1rem;
+}
+.Search-image{
+    padding: 10px;
+    width : 100%; 
+   border:0px ;
+}
+.center-card-1{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  
+    padding: 10px ;
+}
+.center-card-2{
+    display : grid ;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+   
+    padding: 10px;
+}
+.center-card-images1{
+    display : grid ;
+    grid-column: 2/3 ;
+}
+.center-card-images1 a{
+    text-decoration: none ;
+    color : black ;
+}
+.center-card-images2{
+    display : grid ;
+    grid-column : 3/4 ;
+}
+.center-card-images2 a{
+    text-decoration: none ;
+    color : black ;
+}
+.center-card-images3{
+    display : grid ;
+    grid-column : 4/5 ;
+}
+.center-card-images3 a{
+    text-decoration: none ;
+    color : black ;
+}
+.center-card-images4{
+    display : grid ;
+    grid-column : 2/3 ;
+}
+.center-card-images4 a{
+    text-decoration: none ;
+    color : black ;
+}
+.center-card-images5{
+    display: grid ;
+    grid-column : 3/4 ;
+}
+.center-card-images5 a{
+    text-decoration: none ;
+    color : black ;
+}
+.center-card-1-images1{
+    width: 100px ;
+    height : 100px ;
+    border-radius: 50%;
+    padding : 4px ;
+}
+.center-card-1-images2{
+    width: 100px ;
+    height : 100px ;
+    border-radius: 50%;
+    padding : 4px ;
+}
+.center-card-1-images3{
+    width: 100px ;
+    height : 100px ;
+    border-radius: 50% ;
+    padding : 4px ;
+}
+.center-card-2-images1{
+    width : 100px ;
+    height : 100px ;
+    border-radius: 50%;
+    padding : 4px ;
+}
+.center-card-2-images2{
+    width : 100px ;
+    height : 100px ;
+    border-radius: 50%;
+    padding : 4px ;
+}
+.Contact{
+   margin-left : 175px ;
+   margin-right: 175px ;
+   margin-top : 75px ;
+}
+.Contact-1{
+     padding-bottom : 10px ;
+}
+.Contact-1 h2{
+    letter-spacing: 0.05rem ;
+    color : rgba(31,72,125,1) ;
+    font-size: 1.8rem ;
+    padding-bottom : 40px ;
+}
+.Contact-1 p{
+    color : rgba(0,0,0,0.7) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Contact-2{
+    padding-top : 10px ;
+}
+.Contact-2 form{
+    display: block;
+    color : rgba(31,72,125,0.9) ;
+    padding-bottom : 50px ;
+    padding-top : 20px ;
+}
+.Contact-2 form input{
+    border : none ;
+    border-bottom : 2px solid rgba(31,190,255,0.73);
+    padding-bottom : 0px ;
+}
+.Contact-2 form textarea{
+    border : none ;
+    border-bottom : 2px solid rgba(31,190,255,0.73);
+    padding-bottom : 0px ;
+}
+.Contact-2 form input:focus{
+    outline : none ;
+    border-bottom : 2px solid rgba(31,72,125,1) ;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.Contact-2 form textarea:focus{
+    outline : none ;
+    border-bottom : 2px solid rgba(31,72,125,1) ;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.Button-2{
+    padding: 8px 32px;
+    text-align: center ;
+    background-color: rgba(31,190,255,0.73);
+    color : white ;
+    border: none;
+}
+.Button-2:hover{
+    /*background-color: white;
+    color : rgba(31,190,255,0.73); 
+    border : 1px solid rgba(31,190,255,0.73);*/
+    border-radius: 10px ;
+    width : 200px;
+    transition: 0.5s ;
+}
+@media (max-width : 998px ) {
+    .Navbar{
+        height : 7rem ;
+        grid-template-columns: 2rem 2fr 3fr 2rem 2rem ;
+    }
+
+    .ListDiv{
+        display: none ;
+    }
+}

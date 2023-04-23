@@ -1,0 +1,48 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8000",
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "cookie-parser": "^1.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently \"react-scripts start\" \"cd.. && cd backend && nodemon index\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "1. It allows students to book PG and Hostel rooms online .\r 2. Every Hostel and PG in a city can be brought to a single platform making it easy for students to book a room .\r 3. Hostel Search by City and Neighborhood .\r 4. Hostel Sorting by Cost , Gender , Mess and Room Availability .\r 5. User booking through online payment .",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

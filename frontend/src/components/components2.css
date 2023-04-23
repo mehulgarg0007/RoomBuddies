@@ -1,0 +1,203 @@
+.Main-1{
+    padding: 75px;
+    background-color : rgb(125, 249, 255,0.1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgba(0,0,0,0.8);
+    letter-spacing: 0.05rem ;
+}
+.Main-1 h2{
+  color: rgba(34, 41, 129, 0.8) ;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.Main-1 hr{
+  border:2px solid rgb(135, 206, 235);
+  border-radius : 3px ;
+  width : 6% ;
+}
+.Main-2{
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  padding: 75px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: rgba(0,0,0,0.8);
+  letter-spacing: 0.05rem ;
+  text-align: center;
+}
+.Main-2.visible{
+  opacity : 1 ;
+}
+.Main-2 h2{
+  color: rgba(34, 41, 129, 0.8) ;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+}
+.Main-3{
+    padding: 75px ;
+    background-color :rgba(31,72,125,1) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align : center ;
+    color : white ;
+    letter-spacing: 0.05rem ;
+}
+.Main-3 h2{
+  color: white ;
+  font-size: 1.8rem;
+  padding-bottom: 30px;
+}
+.steps{
+    display: flex;
+    justify-content: space-around;
+    padding-top : 50px ;
+}
+
+.grid-container {
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px 20px;
+    padding-top : 75px ;
+    padding-left: 200px;
+    padding-right : 200px ;
+    padding-bottom : 75px ;
+  }
+  
+  .grid-container > div {
+    width : 400px ;
+    height : 90px ;
+    background-color: white ;
+    padding: 10px ;
+    font-size: 20px;
+    color : rgba(34, 41, 129, 1) ;
+    border-radius: 4px;
+  }
+ 
+  .Bottom{
+    color : white ;
+    background-color: rgba(0,0,0,0.8);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top : 40px ;
+    padding-bottom : 40px ;
+  }
+  .Bottom-1{
+    padding: 2px ;
+    grid-column: 2/3 ;
+  }
+  .Bottom-2{
+    padding: 2px ;
+    grid-column : 3/4 ;
+  }
+  .Bottom-3{
+    padding: 2px ;
+    grid-column : 4/5 ;
+  }
+  .Bottom-4{
+    padding: 2px ;
+    grid-column : 5/6 ;
+  }
+  span{
+    color : rgba(31,190,255,0.73);
+    font-size : 1.8rem ;
+  }
+  .Main-1-image{
+    background-color : white ;
+    padding : 20px ;
+    width :fit-content;
+    box-shadow: rgba(31,190,255,0.5) 1px 3px 12px -1px, rgba(31,190,255,0.5) 0px 3px 7px -3px;
+    margin: auto;
+  }
+  .Main-1-head{
+    padding : 20px ;
+  }
+  .Main-1-head h3{
+    color : rgba(60, 157, 196, 0.73) ;
+    font-size : 1.4rem ;
+    padding : 10px ;
+  }
+  .Main-2-head{
+    padding : 20px ;
+  }
+  .Main-2-head h3{
+    color : rgba(60, 157, 196, 0.73) ;
+    font-size : 1.4rem ;
+    padding : 10px ;
+  }
+
+  /*About Us*/
+ 
+.about-us{
+  margin: 100px 200px;
+  line-height: 2;
+  font-size: large;
+}
+
+.image-1{
+  float:left;
+  width: 300px;
+  height: 350px;
+  margin-right: 40px;
+  margin-top:20px;
+}
+.image-2{
+  float: right;
+  height: 400px;
+  width:300px;
+  margin-top:20px;
+  margin-left: 40px;
+
+}
+.who-we-are{
+  line-height: 2;
+  font-size: large;
+  height: 400px;
+}
+.what-do-we-do{
+  height: 450px;
+  font-size: large;
+  line-height: 2;
+  margin-bottom: 10px;
+}
+.our-aim{
+  font-size:large;
+  line-height: 2;
+}
+.team-heading{
+  text-align: center;
+}
+.mehul{
+  height: 400px;
+
+}
+.mehul-img{
+  width:300px;
+  height:300px;
+  float: left;
+  margin-right: 40px;
+}
+.navam{
+  height:400px;
+}
+.navam-img{
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-left:40px;
+}
+.priyanshu{
+  height:400px;
+}
+.priyanshu-img{
+  width:300px;
+  height:300px;
+  float:left;
+  margin-right:40px;
+}
+.heading-1{
+  margin-left:600px;
+}
+hr{
+  width: auto;
+}
