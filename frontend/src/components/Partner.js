@@ -1,7 +1,7 @@
 import React, { useState } from  'react'
-// import './components1.css' ;
-// import Navbar from './navbar' ;
-// import Footer from './footer'
+import './components1.css' ;
+import Navbar from './navbar' ;
+import Footer from './footer'
 
 function Partner(){
 
@@ -55,7 +55,7 @@ console.warn(result);
    
 return(
     <>
-      {/* <Navbar/> */}
+      <Navbar/>
       <div className='Contact'>
             <div className='Contact-1'>
                 <h2>Join Our Platform</h2><hr />
@@ -119,7 +119,7 @@ return(
       </form>
     </div>
   </div>
-  {/* <Footer/> */}
+  <Footer/>
   </>   
     );
  }
