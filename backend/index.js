@@ -29,7 +29,7 @@ mongoose.connect(DB,{
     useUnifiedTopology : true ,
     //useFindAndModify : false
 }).then(()=>{
-    console.log("Poonam");
+    console.log("connected");
 }).catch((err) => {console.log(err)}) ;
 
 app.use(express.json()) ;

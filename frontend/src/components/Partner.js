@@ -39,7 +39,7 @@ function convertbase64(file) {
 };
 
 const PostData=async()=>{
-    let result = await fetch("/register",{
+    let result = await fetch("/pgs",{
         method:"post",
         mode:'cors',
            headers:{
