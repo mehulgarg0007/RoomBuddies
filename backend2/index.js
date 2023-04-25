@@ -2,6 +2,11 @@ const express = require('express')
 const mongoose =require('mongoose')
 
 const app = express() ;
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json({ limit: '50mb' })); 
@@ -21,7 +26,7 @@ app.get("/",(req,res)=>{
 app.get("/about",middleware, (req,res)=>{
   res.send('hello world from server');
 })
-app.listen(5000,()=>{
+app.listen(1000,()=>{
   console.log('server is running')
 }
 )

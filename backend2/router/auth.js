@@ -29,10 +29,11 @@ router.post("/pgs",async (req,res)=>{
   res.status(201).json({message:"registered"})
     
   }
-  catch(err)
-  {res.status(201).json({message:"registered"})
-  console.log(err);
+  catch(err) {
+    res.status(500).json({error: "internal server error"});
+    console.log(err);
   }
+  
   
 })
 router.get("/priyanshu",async(req,res)=>{

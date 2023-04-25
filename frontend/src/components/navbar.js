@@ -16,7 +16,7 @@ function Navbar(){
             <div className='ListDiv'>
                 <ul className='Navbar-List'>
                     <li className='list'><a href="/">Home</a></li>
-                    <li className='list'><a href="#">Cities</a></li>
+                    <li className='list'><a href="./cities">Cities</a></li>
                     <li className='list'><a href="./">About Us</a></li>
                     <li className='list'><a href="./partner">For PG Owners</a></li>
                     <li className='list'><a href="./ContactUs">Contact Us</a></li>

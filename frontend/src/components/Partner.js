@@ -39,7 +39,7 @@ function convertbase64(file) {
 };
 
 const PostData=async()=>{
-    let result = await fetch("/pgs",{
+    let result = await fetch("http://localhost:1000/pgs",{
         method:"post",
         mode:'cors',
            headers:{
