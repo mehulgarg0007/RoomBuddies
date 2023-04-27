@@ -34,7 +34,7 @@ function Navbar(props){
 
         <nav className = "Navbar">
             <div className='Main'>
-                <h2><span>R</span>OOM <span>B</span>IRDIES</h2>
+                <h2><span>R</span>OOM <span>B</span>UDDIES</h2>
             </div>
             <div className='ListDiv'>
                 <ul className='Navbar-List'>

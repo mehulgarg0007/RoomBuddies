@@ -8,6 +8,8 @@ import {MdLocationCity} from 'react-icons/md'
 import {MdEmail} from 'react-icons/md'
 import {BsFillTelephoneFill} from 'react-icons/bs'
 import {RiLockPasswordFill} from 'react-icons/ri'
+import Navbar from './navbar'
+import Footer from './footer'
 
 function Signup(){
 
@@ -62,8 +64,8 @@ function Signup(){
     }
     return (
         <>
-        <div className='search-local' style={{backgroundColor:'rgb(135, 206, 235)', height:'100vh'}}>
-            <div className='center-card' style={{backgroundColor:'white'}}>
+        <Navbar/>
+        <div className='center-card' style={{margin:'10%',width:'60%',margin:'auto',marginTop:'10%',marginBottom:'10%'}}>
                 <div className='Contact-2'>
                     <h2 style={{color : 'rgba(31,72,125,1)'}}>
                        Register As New User
@@ -108,7 +110,7 @@ function Signup(){
                 <a href='./Login' style={{textDecoration:'none',color:'rgba(31,72,125,1)'}}>Already Registered ?</a>
                 </div>
             </div>
-        </div>
+        <Footer/>
         </>
     );
 }

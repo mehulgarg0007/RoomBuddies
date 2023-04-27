@@ -83,11 +83,12 @@
     margin-left:auto ;
     margin-right:auto;
     padding-top:5%;
-    padding-bottom:5%;
+    padding-bottom:2.5%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .Bottom-1{
+    
     margin:5%;
     grid-column: 1/2;
   }
@@ -96,6 +97,7 @@
     grid-column: 2/3;
   }
   .Bottom-3{
+    text-align: center;
     margin:5%;
     grid-column: 3/4;
   }
@@ -129,6 +131,18 @@
     color : rgba(60, 157, 196, 0.73) ;
     font-size : 1.4rem ;
     padding : 10px ;
+  }
+  .footer-list{
+    padding:2%;
+  }
+  .footer-list li{
+    list-style-type:disc ;
+    color:white;
+    padding : 2% ;
+  }
+  .footer-list li a{
+      color : white ;
+      text-decoration: none; 
   }
 
   /*About Us*/
