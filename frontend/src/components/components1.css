@@ -60,7 +60,7 @@ li{
     justify-content: right;
     color: white ;
     padding: 10px ;
-    background-color: rgba(31,190,255,0.73);
+    background-color:rgba(31,190,255,0.73) ;
 }
 .Search-header{
     padding-top : 50px;

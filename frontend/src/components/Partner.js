@@ -74,7 +74,7 @@ const PostData = async () => {
 return(
     <>
       <Navbar/>
-      <ToastContainer />
+      {/*<ToastContainer />*/}
       <div className='Contact'>
             <div className='Contact-1'>
                 <h2>Join Our Platform</h2><hr />
