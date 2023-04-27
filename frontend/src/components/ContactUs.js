@@ -2,7 +2,6 @@ import React , {useRef} from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import './components1.css'
-import './components2.css'
 import emailjs from '@emailjs/browser'
 
 function thanks(){
