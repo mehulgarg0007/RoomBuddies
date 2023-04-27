@@ -74,34 +74,29 @@
     border-radius: 4px;
   }
  
-  .Foot{
-    color : white ;
-    background-color:black;
-  }
   .Bottom{
-    width: 80%;
-    margin-left:auto ;
-    margin-right:auto;
-    padding-top:5%;
-    padding-bottom:5%;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color : white ;
+    background-color: rgba(0,0,0,0.8);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top : 40px ;
+    padding-bottom : 40px ;
   }
   .Bottom-1{
-    margin:5%;
-    grid-column: 1/2;
+    padding: 2px ;
+    grid-column: 2/3 ;
   }
   .Bottom-2{
-    margin:5%;
-    grid-column: 2/3;
+    padding: 2px ;
+    grid-column : 3/4 ;
   }
   .Bottom-3{
-    margin:5%;
-    grid-column: 3/4;
+    padding: 2px ;
+    grid-column : 4/5 ;
   }
   .Bottom-4{
-    margin:5%;
-    grid-column: 4/5;
+    padding: 2px ;
+    grid-column : 5/6 ;
   }
   span{
     color : rgba(31,190,255,0.73);
@@ -206,44 +201,3 @@
 hr{
   width: auto;
 }
-
-/*Profile Page*/
-
-.Profile{
-  /*display : flex ;*/
-  width:80% ;
-  margin-left:auto ;
-  margin-right:auto ;
-  margin : 10% ;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ;
-}
-.Profile-Info{
-  display: flex ;
-  padding : 7.5% ;
-}
-.Profile-Info h4{
-  float : left ;
-  color:rgba(60, 157, 196, 0.73)
-}
-.Profile-Info p{
-  float : right ;
-  align-items: center;
-}
-.Profile-1{
-  display: flex;
-}
-.User-Image{
-  width: 50% ;
-}
-.User-Information{
-  width : 50%;
-  padding-left: 7.5%;
-  padding-right : 7.5% ;
-  padding-top : 5% ;
-}
-.User-Information h2{
-  text-align : center;
-  color :rgba(34, 41, 129, 1)
-}
-
-

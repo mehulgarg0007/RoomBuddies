@@ -2,7 +2,6 @@ import React , {useRef} from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 import './components1.css'
-import './components2.css'
 import emailjs from '@emailjs/browser'
 
 function thanks(){
@@ -53,7 +52,7 @@ function Contact(){
               <textarea name="message" rows={5} cols={50} required='true'/>
               <br/>
               <br/>
-              <button type="submit" value="Send" className='Button-2' onClick={thanks}>Send</button>
+              <input type="submit" value="Send" className='Submit' onClick={thanks}/>
             </form>
             </div>
         </div>

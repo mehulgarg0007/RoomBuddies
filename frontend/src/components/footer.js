@@ -11,8 +11,7 @@ import {FaInstagramSquare} from 'react-icons/fa'
 function Footer(){
     return(
         <>
-           <div className='Foot'>
-               <div className='Bottom'>
+           <div className='Bottom'>
                <div className='Bottom-1'> 
                     <h3><span>R</span>oom <span>B</span>irdies</h3><br/>
                     <p>Book My PG is India's Largest growing "PG Rental Network" attempting to provide better 
@@ -34,12 +33,11 @@ function Footer(){
 
                <div className='Bottom-4'>
                    <h2>FOLLOW US</h2>
-                   <a href="#"><AiFillFacebook size={40} color='rgba(31,190,255,0.73)'/></a>
-                   <a href="#"><FaTwitterSquare size={40} color='rgba(31,190,255,0.73)'/></a>
-                   <a href="#"><FaInstagramSquare size={40} color='rgba(31,190,255,0.73)'/></a>
-                   <a href="#"><ImLinkedin size={40} color='rgba(31,190,255,0.73)'/></a>
-                   <a href="#"><GrYoutube size={40} color='rgba(31,190,255,0.73)'/></a>
-               </div>
+                   <a href="#"><AiFillFacebook size={40} color='red'/></a>
+                   <a href="#"><FaTwitterSquare size={40}/></a>
+                   <a href="#"><FaInstagramSquare size={40}/></a>
+                   <a href="#"><ImLinkedin size={40}/></a>
+                   <a href="#"><GrYoutube size={40}/></a>
                </div>
            </div>
        </>
