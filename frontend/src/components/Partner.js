@@ -1,4 +1,9 @@
 import React, { useState } from  'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+
 import './components1.css' ;
 import Navbar from './navbar' ;
 import Footer from './footer'
@@ -38,24 +43,38 @@ function convertbase64(file) {
     });
 };
 
-const PostData=async()=>{
-    let result = await fetch("http://localhost:1000/pgs",{
-        method:"post",
-        mode:'cors',
-           headers:{
-            "Content-Type":"application/json"
-           },
-           body:JSON.stringify({
-            name,gender,contactPerson_name,email,mobile,property_address,image,password
-           }) 
+const PostData = async () => {
+  let result = await fetch("http://localhost:1000/pgs", {
+    method: "post",
+    mode: 'cors',
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      name, gender, contactPerson_name, email, mobile, property_address, image, password
+    })
+  });
+  result = await result.json();
+  console.warn(result);
+
+  if (result.status === "success") {
+    toast.success("Registered successfully!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
     });
-    result=await result.json();
-console.warn(result);
+  }
 };
+
    
 return(
     <>
       <Navbar/>
+      <ToastContainer />
       <div className='Contact'>
             <div className='Contact-1'>
                 <h2>Join Our Platform</h2><hr />
