@@ -5,14 +5,15 @@ import './components1.css'
 import './components2.css'
 import emailjs from '@emailjs/browser'
 
+
 function thanks(){
   window.alert("Thanks for connecting")
 }
 function Contact(){
 
-  const form = useRef();
+const form = useRef();
 
-  const sendEmail = (e) => {
+const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_xfubu3g', 'template_4btsb2r', form.current, 'qO-TcwDTAPLl4YQVP')
