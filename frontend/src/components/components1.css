@@ -237,11 +237,11 @@ button{
     border-radius: 50%;
     padding : 4px ;
 }
-.Contact{
-   margin-left : 175px ;
-   margin-right: 175px ;
-   margin-top : 75px ;
-}
+.Contact {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 75px;
+  }
 .Contact-1{
      padding-bottom : 10px ;
 }
@@ -321,3 +321,58 @@ button{
     }
   
 }
+
+
+  
+  @media screen and (min-width: 768px) {
+    /* For screens wider than 768px */
+    .Contact {
+      margin-left: 175px;
+      margin-right: 175px;
+    }
+  
+    .Contact-1 h2 {
+      font-size: 2.2rem;
+      padding-bottom: 60px;
+    }
+  
+    .Contact-1 p {
+      font-size: 1.2rem;
+    }
+  
+    .Contact-2 form input,
+    .Contact-2 form textarea {
+      font-size: 1.2rem;
+    }
+  
+    .Button-2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* For screens wider than 1024px */
+    .Contact {
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  
+    .Contact-1 h2 {
+      font-size: 2.5rem;
+      padding-bottom: 80px;
+    }
+  
+    .Contact-1 p {
+      font-size: 1.4rem;
+    }
+  
+    .Contact-2 form input,
+    .Contact-2 form textarea {
+      font-size: 1.4rem;
+    }
+  
+    .Button-2 {
+      font-size: 1.4rem;
+    }
+  }
+  

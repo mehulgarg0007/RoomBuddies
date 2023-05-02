@@ -1,7 +1,7 @@
 import { useState } from "react";
+import './components2.css'
 
-
-function Card({name, image,property_address,contact,removePgs})  {
+function Card({name,image,property_address,contact,removePgs})  {
     const[readmore,setReadmore] = useState(false);
     
     const description = readmore ? property_address :`${property_address.substring(0,200)}....`;

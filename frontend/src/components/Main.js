@@ -10,27 +10,48 @@ import {AiFillPushpin} from 'react-icons/ai'
 import {FaCalendarCheck} from 'react-icons/fa'
 import {GiPriceTag} from 'react-icons/gi'
 /*Main body of Home*/
-function Main(){
+function Main() {
     useEffect(() => {
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 50) {
-                document.querySelector('Main-2').classList.add('visible');
-            }
-        });
+        const handleScroll = () => {
+          const windowHeight = window.innerHeight;
+          const pageHeight = document.body.scrollHeight;
+          const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      
+          const main1Position = 0.3 * pageHeight;
+          const main2Position = 0.5 * pageHeight;
+          const main3Position = 0.6 * pageHeight;
+      
+          if (scrollPosition > main1Position) {
+            document.querySelector('.Main-1').classList.add('visible');
+          } else {
+            document.querySelector('.Main-1').classList.remove('visible');
+          }
+      
+          if (scrollPosition > main2Position) {
+            document.querySelector('.Main-2').classList.add('visible');
+          } else {
+            document.querySelector('.Main-2').classList.remove('visible');
+          }
+      
+          if (scrollPosition > main3Position) {
+            document.querySelector('.Main-3').classList.add('visible');
+          } else {
+            document.querySelector('.Main-3').classList.remove('visible');
+          }
+        };
+      
+        window.addEventListener('scroll', handleScroll);
         return () => {
-          window.removeEventListener('scroll', function() {
-          
-          });
+          window.removeEventListener('scroll', handleScroll);
         };
       }, []);
+      
+
     return(
        <>
        <div>
         <br/>
         <br/>
-
-
-
         <br/>
         <br/>
         <br/>
@@ -104,48 +125,48 @@ function Main(){
 
 
        <div className='Main-2'>
-       <h2>What We Offer</h2>
-       <hr/>
-            <p>The listed services are offered to all our customers. We assure you the best deals in all our properties and the<br/>
-             chance to live a more luxurious life with lesser cost.</p>
-            <div className='steps'>
-                <div className='step-1'>
-                    <div className='Main-2-image'>
-                        <AiFillPushpin size={100} color='skyblue'/>
-                    </div>
-                    <div className='Main-2-head'>
-                    <h3>Find PG'S Near You</h3>
-                    <p>Find Paying guests near you by selecting<br/>
-                      your location. We cover more than 50+<br/>
-                      localities in every city.</p>
-                    </div>
-                </div>
-
-                <div className='step-2'>
-                    <div className='Main-2-image'>
-                        <FaCalendarCheck size={100} color='skyblue'/>
-                    </div>
-                    <div className='Main-2-head'>
-                    <h3>Book Online</h3>
-                    <p>Book your PG online through our web portal<br/>
-                     or mobile application. Avail discounts that<br/>
-                     are available for booking online.</p>
-                    </div>
-                </div>
-
-                <div className='step-3'>
-                    <div className='Main-2-image'> 
-                        <GiPriceTag size={100} color='skyblue'/>
-                    </div>
-                    <div className='Main-2-head'>
-                    <h3>Best Deals On PG</h3>
-                   <p>We have tie ups with PGs in every city. We<br/>
-                    make sure that our customers get the best<br/>
-                     deals for PGs.</p>
-                    </div>
-                </div>
+        <h2>What We Offer</h2>
+        <hr/>
+        <p>The listed services are offered to all our customers. We assure you the best deals in all our properties and the<br/>
+        chance to live a more luxurious life with lesser cost.</p>
+        <div className='steps'>
+          <div className='step-1'>
+            <div className='Main-2-image'>
+              <AiFillPushpin size={100} color='skyblue'/>
             </div>
-       </div>
+            <div className='Main-2-head'>
+              <h3>Find PG'S Near You</h3>
+              <p>Find Paying guests near you by selecting<br/>
+              your location. We cover more than 50+<br/>
+              localities in every city.</p>
+            </div>
+          </div>
+
+          <div className='step-2'>
+            <div className='Main-2-image'>
+              <FaCalendarCheck size={100} color='skyblue'/>
+            </div>
+            <div className='Main-2-head'>
+              <h3>Book Online</h3>
+              <p>Book your PG online through our web portal<br/>
+              or mobile application. Avail discounts that<br/>
+              are available for booking online.</p>
+            </div>
+          </div>
+
+          <div className='step-3'>
+            <div className='Main-2-image'> 
+              <GiPriceTag size={100} color='skyblue'/>
+            </div>
+            <div className='Main-2-head'>
+              <h3>Best Deals On PG</h3>
+              <p>We have tie ups with PGs in every city. We<br/>
+              make sure that our customers get the best<br/>
+              deals for PGs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
        <div className='Main-3'>
