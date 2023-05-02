@@ -9,6 +9,15 @@ import {MdMarkEmailRead} from 'react-icons/md'
 import {AiFillPushpin} from 'react-icons/ai'
 import {FaCalendarCheck} from 'react-icons/fa'
 import {GiPriceTag} from 'react-icons/gi'
+import {TbAirConditioning} from 'react-icons/tb'
+import {MdOutlineBalcony} from 'react-icons/md'
+import {FaBed} from 'react-icons/fa'
+import {SlScreenDesktop} from 'react-icons/sl'
+import {GiWaterGallon} from 'react-icons/gi'
+import {FaIntercom} from 'react-icons/fa'
+import {GiLockers} from 'react-icons/gi'
+import  {AiFillRead} from 'react-icons/ai'
+import {AiOutlineWifi} from 'react-icons/ai'
 /*Main body of Home*/
 function Main() {
     useEffect(() => {
@@ -175,38 +184,47 @@ function Main() {
              you may get by request, Because that type of amenities are not mandatory.</p>
              <div className='grid-container'>
              <div className='grid-item'>
+                  <TbAirConditioning/>
                   <h5>Air Conditioner</h5>
                   <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                  <MdOutlineBalcony/>
                   <h5>Balcony</h5>
                   <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                 <FaBed/>
                  <h5>Extra Bed</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+              <SlScreenDesktop/>
                  <h5>Flat TV</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                 <GiWaterGallon/>
                  <h5>Hot & Cold Water</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                 <FaIntercom/>
                  <h5>InterCom</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+              <GiLockers/>
                  <h5>Locker</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                 <AiFillRead/>
                  <h5>Read Table</h5>
                  <p>Surely Available</p>
              </div>
              <div className='grid-item'>
+                <AiOutlineWifi/>
                 <h5>Wifi</h5>
                 <p>Surely Available</p>
              </div>

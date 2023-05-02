@@ -52,37 +52,37 @@
 .Main-3.visible{
   opacity:1;
 }
-.Main-3 h2{
-  color: white ;
+.Main-3 h2 {
+  color: white;
   font-size: 1.8rem;
   padding-bottom: 30px;
 }
-.steps{
-    display: flex;
-    justify-content: space-around;
-    padding-top : 50px ;
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
 }
 
 .grid-container {
-    display: grid;
-    align-content: center;
-    grid-template-columns: auto auto auto;
-    gap: 20px 20px;
-    padding-top : 75px ;
-    padding-left: 200px;
-    padding-right : 200px ;
-    padding-bottom : 75px ;
-  }
-  
-  .grid-container > div {
-    width : 400px ;
-    height : 90px ;
-    background-color: white ;
-    padding: 10px ;
-    font-size: 20px;
-    color : rgba(34, 41, 129, 1) ;
-    border-radius: 4px;
-  }
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px 20px;
+  padding: 75px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.grid-item {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  color: rgba(34, 41, 129, 1);
+  border-radius: 4px;
+}
+
  .Foot{
   color:white;
   background-color:black;
