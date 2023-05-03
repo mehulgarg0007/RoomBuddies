@@ -27,7 +27,7 @@ function Main() {
           const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
       
           const main1Position = 0.3 * pageHeight;
-          const main2Position = 0.5 * pageHeight;
+          const main2Position = 0.45 * pageHeight;
           const main3Position = 0.6 * pageHeight;
       
           if (scrollPosition > main1Position) {

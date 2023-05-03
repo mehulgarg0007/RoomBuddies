@@ -7,6 +7,7 @@ import House2 from './assets/images/House2.png'
 import Mehul from './assets/images/Mehul.png'
 import Navam from './assets/images/Navam.png'
 import priyanshu from './assets/images/priyasnhu.png'
+import DeveloperCard from './DeveloperCard';
 
 function AboutUs(){
     return(
@@ -21,12 +22,11 @@ function AboutUs(){
                     Amenities and Gender. Presently we have Launched in Platform in Prayagraj and other major cities in Uttar Pradesh. We
                     will soon expand to all the Major Cities of the Country. 
                 </p>
-        
+                <br/>
                 <div className="who-we-are">
-                    
                     <hr/>
                     <img className="image-1" src={House1} alt="house-image"/>
-                    <h2 class="heading-1">Who we are?</h2>
+                    <h2 class="heading-1" style={{color: 'rgba(31,72,125,1)'}}>Who we are?</h2>
                     <p>We are a set of well-selected and chosen Paying Guest services. This is a platform where those, who are
                         willing to open their homes to guests, meet the people looking for wonderful homes to stay in and not
                         have to look for hotels or favors in any city for their long stays. We ensure the places listed and the
@@ -36,11 +36,10 @@ function AboutUs(){
                     </p>
                 </div>
                 <hr/>
+                <br/>
                 <div className="what-do-we-do">
-                    
-                    
                     <img className="image-2" src={House2} alt="house-image"/>
-                    <h2 className="heading-2">What do we do?</h2>
+                    <h2 className="heading-2" style={{color: 'rgba(31,72,125,1)'}}>What do we do?</h2>
                     <p >We put together a list of places where our guests can stay as a PG. This is done based on listings on our
                         site by homeowners. We ensure that not only are they a safe home for the guest but the guest too is safe
                         for them. These places can be searched based on locality, budget, need, and multiple other filters. Find
@@ -53,9 +52,9 @@ function AboutUs(){
                         waiting for the next stroke of luck and therefore listing with us helps them find a guest sooner.
                     </p>
                 </div>
-                <hr/>
+                <br/>
                 <div className="our-aim">
-                    <h2 className="heading-3">What are we aiming at?</h2>
+                    <h2 className="heading-3" style={{color: 'rgba(31,72,125,1)'}}>What are we aiming at?</h2>
                     <p>What are we aiming at?
                         Our aim and motto are simple and singular. To provide the guests with a PG that feels like home best
                         fitting their needs and the homeowners a guest who fits right in. To attain this we work with homeowners
@@ -70,37 +69,32 @@ function AboutUs(){
                         out of the system.
                     </p>
                 </div>
-                <div className="our-team">
-                    <h2 className="team-heading">OUR ASPIRING TEAM</h2>
-                    <div className="mehul">
-                        <img className="mehul-img" src={Mehul} alt="mehul-img"/>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution
-                            of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                        </p>
-                        
-                    </div>
-                    
-                    <div className="navam">
-                        <img className="navam-img" src={Navam} alt="navam-img"/>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution
-                            of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                        </p>
-                      
-                    </div>
-                    
-                    <div className="priyanshu">
-                        <img className="priyanshu-img" src={priyanshu} alt="priyanshu-img"/>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                            distribution
-                            of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                        </p>
-                    </div>
-                </div>
+
+                <h2 style={{marginLeft:'40%',paddingTop:'10%',color: 'rgba(31,72,125,1)',fontSize:'1.8rem'}}>Our Aspiring Team</h2>
+                <div className="developers-section">
+                
+                <DeveloperCard
+                image={Mehul}
+                name="Mehul Garg"
+                title="Web Developer"
+                description="Sophomore at Motilal Nehru National Institute Of Technology Allahabad"
+                linkedin='linkedin.com/in/mehul-garg-829b00242'
+                />
+               <DeveloperCard
+               image={Navam}
+               name={'Navam Gupta'}
+               title="Web Developer"
+               description="Sophomore at Motilal Nehru National Institute Of Technology Allahabad"
+               linkedin='https://www.linkedin.com/in/navam-gupta-667709251/'
+               />
+               <DeveloperCard
+               image={priyanshu}
+               name="Priyanshu Mishra"
+               title="Web Developer"
+               description="Sophomore at Motilal Nehru National Institute Of Technology Allahabad"
+               linkedin='https://www.linkedin.com/in/priyanshu5656/'
+               />
+              </div>
             </div>
             <Footer/>
         </>

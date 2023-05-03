@@ -156,34 +156,35 @@
 
   /*About Us*/
  
-.about-us{
-  margin: 100px 200px;
-  line-height: 2;
-  font-size: large;
-}
-
-.image-1{
-  float:left;
-  width: 300px;
-  height: 350px;
-  margin-right: 40px;
-  margin-top:20px;
-}
-.image-2{
-  float: right;
-  height: 400px;
-  width:300px;
-  margin-top:20px;
-  margin-left: 40px;
-
-}
+  .about-us {
+    margin: 10% 10%;
+    line-height: 2;
+    font-size: 120%;
+  }
+  
+  .image-1{
+    float:left;
+    width: 75%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 4%;
+    margin-top:2%;
+  }
+  .image-2 {
+    float: right;
+    height: 50%;
+    width: 30%;
+    margin-top: 2%;
+    margin-left: 2%;
+  }
+  
 .who-we-are{
   line-height: 2;
   font-size: large;
-  height: 400px;
+  height: 30%;
 }
 .what-do-we-do{
-  height: 450px;
+  height: 30%;
   font-size: large;
   line-height: 2;
   margin-bottom: 10px;
@@ -224,11 +225,89 @@
   margin-right:40px;
 }
 .heading-1{
-  margin-left:600px;
+  margin-left:25%;
+}
+.heading-2{
+  margin-right : 75%;
 }
 hr{
   width: auto;
 }
+
+/* Default styles */
+
+
+
+/* Styles for screens smaller than 768px */
+
+@media only screen and (max-width: 768px) {
+  .about-us {
+    padding: 30px;
+  }
+  .who-we-are {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .what-do-we-do {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .our-aim {
+    text-align: center;
+  }
+  .mehul, .navam, .priyanshu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .mehul-img, .navam-img, .priyanshu-img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Styles for screens between 768px and 1200px */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .about-us {
+    padding: 40px;
+  }
+  .who-we-are {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .what-do-we-do {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .our-aim {
+    text-align: center;
+  }
+}
+
+/* Styles for screens larger than 1200px */
+
+@media only screen and (min-width: 1200px) {
+  .who-we-are {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .what-do-we-do {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
 
 /*Profile Page*/
 
@@ -351,4 +430,87 @@ hr{
   background-color: white;
   color: black;
   transition: all 0.2s;
+}
+
+
+/* Developer section container */
+.developers-section {
+  padding: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* Developer card container */
+.developer-card {
+  position: relative;
+  width: 30%;
+  height: 600px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+/* Developer card image */
+.developer-card img {
+  border-radius: 50%;
+  border: 4px solid rgb(135, 206, 235);
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+/* Developer card overlay */
+.developer-card .description.show-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+
+
+/* Developer card description */
+.developer-card .description {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Developer card description show state */
+.developer-card .description.show {
+  display: block;
+}
+
+.developer-card .description.show h3{
+  color :rgba(34, 41, 129, 1);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+
+}
+.developer-card .description.show p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  text-align: center;
+}
+.developer-card .description.show a{
+  margin: 10px 0 0;
+  text-align: center;
+}
+
+/* Developer card hover state */
+.developer-card:hover {
+  transform: scale(1.05);
+}
+
+.developer-card:hover .developer-card-overlay {
+  opacity: 1;
 }
