@@ -12,7 +12,8 @@ import Login from './components/Login'
 import Profile from './components/Profile' ;
 import Partner from './components/Partner'
 import Pgs from "./components/Pgs";
-import AboutUs from './components/AboutUs'
+import AboutUs from './components/AboutUs';
+import PgLogin from './components/pgLogin'
 
 function App(){
 
@@ -30,6 +31,7 @@ function App(){
             <Route path='/partner' element={<Partner/>}/>
             <Route path='/AboutUs' element={<AboutUs/>}/>
             <Route path='cities' element={<Pgs/>}/>
+            <Route path='/pgLogin' element={<PgLogin/>}/>
           </Routes>
         </Router>
        </>

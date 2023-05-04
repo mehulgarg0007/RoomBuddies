@@ -136,6 +136,9 @@ return(
         <br/>
         <button className='Button-2' onClick={PostData}>submit</button> 
       </form>
+      <div>
+        <a href='./pgLogin'>click here</a>
+      </div>
     </div>
   </div>
   <Footer/>

@@ -1,9 +1,14 @@
 const express=require('express');
 const router= express.Router();
+const cookieParser = require('cookie-parser');
+
+const app = express();
+app.use(cookieParser());
 
 
 require('../db/conn');
 const User= require("../model/userSchema")
+const aut=require("../middleware/authenticate");
 router.get("/",(req,res)=>{
     res.send('hello world from server from router');
   })
@@ -46,4 +51,31 @@ router.get("/priyanshu",async(req,res)=>{
   res.send("no result found");
 
 })
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(401).json({ message: 'Invalid email or password' });
+    }
+
+    const isPasswordValid = await user.comparePassword(password);
+    if (!isPasswordValid) {
+      return res.status(401).json({ message: 'Invalid email or password' });
+    }
+
+    const token = user.generateAuthToken();
+    res.cookie('token', token, { httpOnly: true });
+    res.json({ message: 'Logged in successfully' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
+router.get('/profile2', aut,(req, res) => {
+  res.json({ user: req.user });
+});
+
+
   module.exports=router;
