@@ -152,6 +152,14 @@
       color : white ;
       text-decoration: none; 
   }
+  .social-icons-container {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   
 
   /*About Us*/
@@ -354,13 +362,14 @@ hr{
   /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1300px;
+  max-width: 100% ;
   margin:0 auto;
 }
 
-.card{
-  width:400px;
-  height:max-content;
+.card-container {
+  perspective : 1000px ;
+  width:25%;
+  height:inherit;
   margin:1rem;
   padding:1rem;
   display: flex;
@@ -369,9 +378,15 @@ hr{
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.card {
+  transition: transform 0.3s;
+}
 
+.card:hover {
+  transform: rotateY(-10deg);
+}
 .image{
-  width:380px;
+  width:100%;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -386,7 +401,9 @@ hr{
 }
 
 .pg-name{
-  font-size:1.5rem;
+  font-size:150%;
+  font-weight: bold;
+  color: rgba(34, 41, 129, 1);
 }
 
 .read-more{
@@ -394,22 +411,6 @@ hr{
   cursor: pointer;
 }
 
-.btn-red{
-  margin-top:18px;
-  padding: 10px 80px;
-  border: 1px solid #b4161b;
-  cursor: pointer;
-  border-radius:10px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #b4161b21;
-}
-
-.btn-red:hover{
-  background-color: red;
-  color:white;
-  transition: all 0.2s;
-}
 
 .refresh{
   height: 100vh;

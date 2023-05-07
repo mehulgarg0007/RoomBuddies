@@ -119,6 +119,23 @@ app.get('/profile', authenticate ,(req,res) => {
     res.send(req.rootUser) ;
 }) ;
 
+
+app.put('/profile', authenticate, async (req, res) => {
+    try {
+        const userId = req.rootUser._id ;
+        const updatedUser = await User.findByIdAndUpdate(
+            userId,
+           { $set: req.body },
+           { new: true }
+        );
+        res.status(200).json(updatedUser);
+    }
+    catch (error) {
+        console.log(error);
+        res.status(500).send("Server Error");
+    }
+  });
+  
 app.listen(PORT,()=>{
     console.log('poonam')
 })

@@ -40,13 +40,15 @@ function Footer(){
                     </ul>
                </div>
 
-               <div className='Bottom-4'>
+                <div className='Bottom-4'>
                    <h2>FOLLOW US</h2>
+                   <div className='social-icons-container'>
                    <a href="#"><AiFillFacebook size={40} color='rgba(31,190,255,0.73) '/></a>
                    <a href="#"><FaTwitterSquare size={40} color='rgba(31,190,255,0.73) '/></a>
                    <a href="#"><FaInstagramSquare size={40} color='rgba(31,190,255,0.73) '/></a>
                    <a href="#"><ImLinkedin size={40} color='rgba(31,190,255,0.73) '/></a>
                    <a href="#"><GrYoutube size={40} color='rgba(31,190,255,0.73) '/></a>
+                </div>
                </div>
                </div>
                </div>

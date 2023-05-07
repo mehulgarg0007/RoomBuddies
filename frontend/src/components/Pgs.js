@@ -1,6 +1,9 @@
 import Card from './Card'
 import React, {useState,useEffect} from "react";
-
+import Navbar from './navbar'
+import Footer from './footer'
+import './components1.css'
+import './components2.css'
 
 function Pgs() {
     const [products, setProducts] = useState([]);
@@ -48,9 +51,11 @@ function Pgs() {
     }
   
     return (
+      <>
+      <Navbar/>
       <div className="container">
-        <div>
-          <h2 className="title"> Available PGs</h2>
+        <div className="Search-header">
+          <h1>Available PGs</h1>
         </div>
         <div className="cards">
           {pg.map((pgs) => {
@@ -58,6 +63,8 @@ function Pgs() {
           })}
         </div>
       </div>
+      <Footer/>
+      </>
     );
   }
   

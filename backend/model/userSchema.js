@@ -2,6 +2,16 @@ const mongoose = require('mongoose') ;
 const bcrypt = require('bcrypt') ;
 const jwt = require('jsonwebtoken') ;
 
+const BookingSchema = new mongoose.Schema({
+    hotelName : {
+        type : String 
+    },
+    bookingDate : {
+        type : Date
+    }
+
+});
+
 const userSchema = new mongoose.Schema({
     name : {
         type : String ,
@@ -27,6 +37,14 @@ const userSchema = new mongoose.Schema({
         type : String ,
         required : true 
     },
+    gender : {
+        type : String ,
+        required : true 
+    },
+    image : {
+        type : String ,
+    },
+    previousBookings : [BookingSchema] ,
     tokens : [
         {
             token : {

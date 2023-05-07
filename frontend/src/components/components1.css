@@ -292,6 +292,7 @@ button{
     background-color: rgba(31,190,255,0.73);
     color : white ;
     border: none;
+    margin: auto;
 }
 .Button-2:hover{
     /*background-color: white;
@@ -346,7 +347,7 @@ button{
     }
   
     .Button-2 {
-      font-size: 1.2rem;
+      font-size: inherit ;
     }
   }
   
@@ -372,7 +373,7 @@ button{
     }
   
     .Button-2 {
-      font-size: 1.4rem;
+      font-size: inherit;
     }
   }
   
