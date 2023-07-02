@@ -103,35 +103,43 @@ function Profile(){
             )}
             <section>
                 <div className="Profile">
-                    <div className="Profile-1">
-                        <div className="User-Image">
-                            <input style={{border : 'none'}} type="file" accept="image/*" name="filename" onChange={(e)=>{handlefileupload(e)}}/>
-                            {image == "" || image == null ? "" :<img src={image} width={400} height={400}></img>}
-                        </div>
-                        <form onSubmit={handleFormSubmit}>
-                            <div className="User-Information">
-                                <h2>User Information</h2>
-                                <div className="Profile-Info">
-                                    <h4>Name :</h4>
-                                    <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
-                                </div>
-                                <div className="Profile-Info">
-                                <h4>Email :</h4>
-                                <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                                </div>
-                                <div className="Profile-Info">
-                                <h4>Phone :</h4>
-                                <input type="text" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
-                                </div>
-                                <div className="Profile-Info">
-                                <h4>City :</h4>
-                                <input type="text" name="city" value={city} onChange={(e) => setCity(e.target.value)} required />
-                                </div>
-                                <button className="Update-Button" type="submit">Update</button>
-                            </div>
-                        </form>
-                   </div>
+                <div className="Contact-2">
+                    <div className="Bookings1">
+                        <h2>Personal Information</h2>
+                    </div>
+                <div className="User-Image">
+                    <input style={{border: 'none'}} type="file" accept="image/*" name="filename" onChange={(e) => {handlefileupload(e)}} />
+                    {image == "" || image == null ? "" : <img src={image} width={400} height={400} alt="User" />}
                 </div>
+                <div className="User-Data">
+                    <h2>User Information</h2>
+                    <form onSubmit={handleFormSubmit}>
+                    <div className="Profile-Info">
+                    <h4>Name :</h4>
+                    <input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} required />
+                </div>
+                <div className="Profile-Info">
+                    <h4>Email :</h4>
+                    <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                </div>
+                <div className="Profile-Info">
+                   <h4>Phone :</h4>
+                   <input type="text" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+                </div>
+                <div className="Profile-Info">
+                   <h4>City :</h4>
+                   <input type="text" name="city" value={city} onChange={(e) => setCity(e.target.value)} required />
+                </div>
+               <button type="submit" className='Button-2'>Update</button>
+               </form>
+                </div>
+            </div>
+                <div className="Profile-2">
+                    <div className="Bookings">
+                        <h2>Previous Bookings</h2>
+                    </div>
+                </div>
+            </div>
             </section>
             <Footer />
             </>

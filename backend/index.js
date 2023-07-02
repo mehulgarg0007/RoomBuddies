@@ -23,7 +23,7 @@ mongoose.connect(DB,{
     useNewUrlParser : true ,
     useUnifiedTopology : true ,
 }).then(()=>{
-    console.log("connected");
+    console.log("Database1 connected");
 }).catch((err) => {console.log(err)}) ;
 
 app.use(express.json()) ;
@@ -37,12 +37,12 @@ app.get('/',(req,res)=>{
 });
 
 app.post('/register', async (req,res) =>{
-    const {name , city , email , phone  , password , cpassword} = req.body ;
+    const {name , city , email , phone , gender, image, password , cpassword} = req.body ;
 
-    if(!name || !email || !phone || !city || !password || !cpassword){
+    if(!name || !email || !phone || !city || !password || !cpassword || !image || !gender){
         return res.status(422).json({error : "plz fill all fields"}) ;
     }
-    if(password.length < 8)
+    if(password.length() < 8)
     {
         return res.status(422).json({error : "password must be 8 characters long"})
     }
@@ -57,18 +57,18 @@ app.post('/register', async (req,res) =>{
             return res.status(422).json({error : "Passwords Do Not Match"}) ;
         }
         else{
-            const user = new User({name , email , phone , city , password , cpassword}) ;
+            const user = new User({name , email , phone , city , gender, image,  password , cpassword}) ;
 
             await user.save() ;
         
-            res.status(201).json({message : "Poonam"}) ;
+            res.status(201).json({message : "Success"}) ;
         }
 
-        const user = new User({name , email , phone , city , password , cpassword}) ;
+        const user = new User({name , email , phone , city , gender, image,  password , cpassword}) ;
 
         await user.save() ;
         
-        res.status(201).json({message : "Poonam"}) ;
+        res.status(201).json({message : "Success"}) ;
    }
    catch(err){
         console.log(err) ;
@@ -137,5 +137,5 @@ app.put('/profile', authenticate, async (req, res) => {
   });
   
 app.listen(PORT,()=>{
-    console.log('poonam')
+    console.log('Port Running')
 })

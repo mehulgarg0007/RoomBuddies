@@ -14,15 +14,40 @@ import Footer from './footer'
 function Signup(){
 
     const navigate = useNavigate() ;
+    const [image,setImage] = react.useState("") ;
     const [user,setUser] = useState({
             name:"",
             city:"",
             email:"",
             phone:"",
+            gender:"",
+            image:"",
             password:"",
             cpassword:"",
     });
 
+     // method to handle image file uploaded .....................
+  const handlefileupload = async (e) => {
+    const file = e.target.files[0];
+    const base64 = await convertbase64(file);
+    console.log(base64);
+    setImage(base64);
+    // console.log(postImage.myfile);  
+  };
+
+  // method to convert imagefile into base64 binary data.......................
+function convertbase64(file) {
+    return new Promise((resolve, reject) => {
+      const filereader = new FileReader();
+      filereader.readAsDataURL(file);
+      filereader.onload = () => {
+        resolve(filereader.result);
+      };
+      filereader.onerror = (error) => {
+        reject(error);
+      }
+    });
+};
     let name , value ;
 
     const handleInputs = (e) => {
@@ -37,7 +62,7 @@ function Signup(){
     const postData = async (e) => {
         e.preventDefault() ;
 
-        const {name, city, email, phone, password, cpassword} = user ;
+        const {name, city, email, phone, gender, image, password, cpassword} = user ;
 
         const res = await fetch("/register",{
             method : "POST" ,
@@ -45,7 +70,7 @@ function Signup(){
                 "Content-type" : "application/json"
             },
             body : JSON.stringify({
-                name, city, email, phone, password, cpassword 
+                name, city, email, phone, gender, image, password, cpassword 
             })
         }) ;
 
@@ -94,8 +119,20 @@ function Signup(){
                 <BsFillTelephoneFill/>
                 <input type='tel'  autoComplete='off' name='phone' id='phone' value={user.phone} onChange={handleInputs}></input>
                 <br/>
+                <label>Gender<span style={{color:'red'}}>*</span></label>
+                <br/>
+                <BsFillTelephoneFill/>
+                <input type='tel'  autoComplete='off' name='phone' id='phone' value={user.phone} onChange={handleInputs}></input>
+                <br/>
                 <label>Password<span style={{color:'red'}}>*</span></label>
                 <br/>
+                <label>Upload Image<span style={{color:'red'}}>*</span></label>
+        <br/>
+        <input style={{border : 'none'}}type="file"   accept="image/*" name="filename" onChange={(e)=>{handlefileupload(e)}}/>
+        <br/>
+        <br/>
+        {image==""||image==null?"":        <img src={image} width={100} height={100}></img>}
+        <br/>
                 <RiLockPasswordFill/>
                 <input type='password'  autoComplete='off' name='password' id='password' value={user.password} onChange={handleInputs}></input>
                 <br/>

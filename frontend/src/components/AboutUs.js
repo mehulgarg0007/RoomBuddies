@@ -5,7 +5,7 @@ import Footer from './footer'
 import House1 from './assets/images/House1.png'
 import House2 from './assets/images/House2.png'
 import Mehul from './assets/images/Mehul.png'
-import Navam from './assets/images/Navam.png'
+import Navam from './assets/images/Navam.jpg'
 import priyanshu from './assets/images/priyasnhu.png'
 import DeveloperCard from './DeveloperCard';
 
